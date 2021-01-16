@@ -1,0 +1,14 @@
+{
+  "email": "benpratt@8returns.com",
+  "did_you_mean": "",
+  "user": "benpratt",
+  "domain": "8returns.com",
+  "format_valid": true,
+  "mx_found": true,
+  "smtp_check": false,
+  "catch_all": null,
+  "role": false,
+  "disposable": false,
+  "free": false,
+  "score": 0.8
+}
