@@ -30,8 +30,7 @@ module Services
         if resp.status == 200
           body = JSON.parse(resp.body)
 
-          unless body['format_valid'] == true && body['mx_found'] == true && 
-             body['smtp_check'] == true && body['catch_all'] == false
+          unless body['format_valid'] == true && body['mx_found'] == true && body['smtp_check'] == true
             @result = false
           end
         else

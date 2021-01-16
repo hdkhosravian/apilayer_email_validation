@@ -1,3 +1,5 @@
+require './app/services/users/list'
+
 class UsersController < ApplicationController
   def index
     if params[:first_name].present? && params[:last_name].present? && params[:url].present?
