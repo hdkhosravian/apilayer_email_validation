@@ -60,8 +60,9 @@ module Services
           email_validate = ::Services::Users::Validate.new(email).process
           if email_validate[:errors].present?
             @errors.concat(email_validate[:errors])
-          else
-            save_email(email) if email_validate[:result]
+          elsif email_validate[:result]
+            save_email(email)
+            break
           end
         end
       end
